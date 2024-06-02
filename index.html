@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <style>
+        body {
+            background-image: url('./images/images1.jpg'); /* Replace 'background-image.jpg' with the path to your image */
+            background-size: cover; /* This property ensures the image covers the entire background */
+            background-position: center; /* Center the background image */
+            /* You can add more CSS properties to style the background image */
+        }
+    </style>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <div class="input-group">
+            <input type="text" id="new-task" placeholder="Add a new task">
+            <select id="priority-level">
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+            </select>
+            <button id="add-task">Add</button>
+        </div>
+        <ul id="task-list"></ul>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
